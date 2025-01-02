@@ -17,7 +17,7 @@
 - git commit -m "เพิ่ม image"
 - git add index.html
 - git commit -m "เพิ่ม logo "
-mmit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
+- git commit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
 - git add index.html
 - git commit -m "เพิ่มimage highligth "
 - git add index.html
@@ -32,10 +32,7 @@ mmit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
 - git commit -m "เพิ่ม ข้อความ Overlay on Carousel "
 - git add info.html
 - git commit -m "สร้างโครง
--
-
-
-                              git add .
+- git add .
 - git add .
 - git commit -m "เพิ่มข้อมูล(+), 1 deletion(-)
 - git add .
@@ -47,7 +44,6 @@ mmit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
 - git add contact-page
 - git add contact.html
 - git commit -m "เริ่มต้นการสร้างโครงสร้างพื้นฐานใน contact"
- 1 file changed, 38 insertions(+)
 - git add contact.html
 - git commit -m "เพิ่ม logo image"
 - git add .           
@@ -56,16 +52,8 @@ mmit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
 - git commit -m "เพิ่มข้อมูลในcontact"
 - git add .
 - git commit -m "ตกแต่งcss"        
-- git brach
-- git braech
 - git branch
-  development
-* feature/contact-page
-  feature/home-page
-  feature/info-page
-  main
 - git checkout  development                              
-Switched to branch 'development'
 - git merge feature/home-page
 - git merge feature/info-page
 - git merge feature/contact-page
