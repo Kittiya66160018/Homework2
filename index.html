@@ -15,6 +15,23 @@
 </head>
 
 <body>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="Search...">
+        <button class="search-button" onclick="performSearch()">Search</button>
+    </div>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                alert(`Searching for: ${query}`);
+                // Add your search logic here, e.g., redirect to another page:
+                // window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+            } else {
+                alert('Please enter a search query.');
+            }
+        }
+    </script>
     <header>
         <div class="header-con">
             <h1> <img class="Logo-image"
