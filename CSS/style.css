@@ -1,0 +1,338 @@
+/* General reset */
+body, h1, p, img, nav, li, a, div, header, main, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-con {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Logo-image {
+    max-height: 80px;
+}
+
+.header-home nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffeb3b;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(17, 15, 15);
+    margin: 3px 0;
+}
+
+/* Main section */
+main {
+    text-align: center;
+    padding: 20px;
+    background-color: #fefefede;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.img-home {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Carousel styling */
+.carousel {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    background-color: #fffce9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-highliht {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-con {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+/* ปรับขนาด Carousel ให้เหมาะสม */
+.carousel-item img {
+    height: 70vh; /* ปรับให้สูง 70% ของความสูงหน้าจอ */
+    object-fit: cover; /* ให้ภาพไม่ยืดหรือบิดเบี้ยว */
+}
+
+/* ข้อความ Overlay */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งใส */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ข้อความหัวข้อ */
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* ข้อความบรรยาย */
+.carousel-caption p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .carousel-item img {
+        height: 50vh; /* ลดความสูงบนอุปกรณ์เล็ก */
+    }
+}
+/* ปรับแต่ง card */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #feffd3bc;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* เพิ่ม spacing สำหรับหน้าเว็บ */
+.container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+h1, h2, h5 {
+    color: #333;
+}
+
+/* Header Styles */
+.header-con {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+    max-height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #0d6efd;
+}
+
+/* Main Section */
+section {
+    padding: 30px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+    border-color: #0d6efd;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #000000;
+    padding: 20px 0;
+}
+
+footer h5 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #0d6efd;
+}
+
+footer .text-center {
+    margin-top: 20px;
+}
