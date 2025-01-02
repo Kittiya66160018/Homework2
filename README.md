@@ -62,3 +62,4 @@
 - git push origin development
 - git add .                  
 - git commit -m "เพิ่มรูป screenshot"
+- git push origin development
