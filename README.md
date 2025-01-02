@@ -1,4 +1,6 @@
 # Homework2
+
+## command in hw2
 - git clone 
 - cd Homework2
 - code .
