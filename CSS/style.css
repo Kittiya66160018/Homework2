@@ -14,7 +14,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #4CAF50;
+    background-color: #ffffff;
     padding: 20px 0;
 }
 
@@ -47,7 +47,7 @@ header {
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -65,7 +65,7 @@ header {
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(17, 15, 15);
     margin: 3px 0;
 }
 
@@ -84,6 +84,18 @@ main {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Carousel styling */
+.carousel {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Section styling */
