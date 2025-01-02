@@ -64,7 +64,7 @@ mmit -m "เพิ่มข้อมูลส่วนไฮไลต์ "
   feature/home-page
   feature/info-page
   main
-- git checkout  development                              t"
+- git checkout  development                              
 Switched to branch 'development'
 - git merge feature/home-page
 - git merge feature/info-page
